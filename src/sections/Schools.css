@@ -1,0 +1,85 @@
+.schools {
+    background: var(--lgray);
+}
+
+.schools-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.school-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.school-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.school-card-img {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.school-emoji {
+    font-size: 80px;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
+    transition: var(--transition);
+}
+
+.school-card:hover .school-emoji {
+    transform: scale(1.15) rotate(5deg);
+}
+
+.school-card-body {
+    padding: 30px;
+    text-align: center;
+}
+
+.school-card h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.school-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--red);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+}
+
+.school-card:hover .school-btn {
+    gap: 12px;
+}
+
+.schools-footer {
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .schools-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}

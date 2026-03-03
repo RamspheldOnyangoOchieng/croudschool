@@ -1,0 +1,113 @@
+.leadership {
+    background: var(--lgray);
+}
+
+.tabs-nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 60px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.tabs-nav::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+}
+
+.tab-btn {
+    padding: 16px 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--gray);
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+}
+
+.tab-btn:hover {
+    color: var(--black);
+}
+
+.tab-btn.active {
+    color: var(--red);
+    border-bottom-color: var(--red);
+}
+
+.leader-card-wrap {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 60px;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.leader-photo {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 400px;
+    box-shadow: var(--shadow-lg);
+}
+
+.leader-photo-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leader-emoji {
+    font-size: 100px;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+}
+
+.leader-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--black);
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.leader-role-tag {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--red);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    display: block;
+}
+
+.leader-bio {
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 32px;
+    color: var(--gray);
+}
+
+@media (max-width: 900px) {
+    .leader-card-wrap {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .leader-photo {
+        width: 280px;
+        height: 350px;
+        margin: 0 auto;
+    }
+}

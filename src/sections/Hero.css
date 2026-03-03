@@ -1,0 +1,149 @@
+.hero {
+    position: relative;
+    height: min(800px, 100vh);
+    overflow: hidden;
+    background: var(--black);
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-bg {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding-top: 80px;
+}
+
+.hero-inner {
+    max-width: 800px;
+}
+
+.hero-eyebrow {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 24px;
+}
+
+.hero-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(36px, 6vw, 68px);
+    font-weight: 900;
+    line-height: 1.05;
+    margin-bottom: 24px;
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+.hero-title span {
+    color: #f5c842;
+}
+
+.hero-desc {
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 300;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-controls {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    pointer-events: none;
+}
+
+.hero-arrow {
+    width: 54px;
+    height: 54px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 20px;
+    cursor: pointer;
+    pointer-events: all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.hero-arrow:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.1);
+}
+
+.hero-dots {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    pointer-events: all;
+}
+
+.hero-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    border: none;
+    transition: var(--transition);
+}
+
+.hero-dot.active {
+    background: var(--white);
+    transform: scale(1.4);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 900px) {
+    .hero {
+        height: 600px;
+    }
+
+    .hero-arrows {
+        display: none;
+    }
+}

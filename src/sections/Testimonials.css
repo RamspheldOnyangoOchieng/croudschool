@@ -1,0 +1,120 @@
+.testimonials {
+    background: var(--white);
+}
+
+.testi-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.testi-content {
+    position: relative;
+}
+
+.testi-quote-icon {
+    font-size: 100px;
+    color: var(--red);
+    font-family: Georgia, serif;
+    line-height: 0.5;
+    opacity: 0.15;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: 0;
+}
+
+.testi-slider {
+    position: relative;
+    z-index: 1;
+    min-height: 250px;
+}
+
+.testi-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black);
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.testi-author {
+    display: flex;
+    flex-direction: column;
+}
+
+.testi-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.testi-role {
+    font-size: 14px;
+    color: var(--red);
+    margin-top: 4px;
+}
+
+.testi-dots {
+    display: flex;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.testi-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #eee;
+    cursor: pointer;
+    border: none;
+    transition: var(--transition);
+}
+
+.testi-dot.active {
+    background: var(--red);
+    transform: scale(1.3);
+}
+
+.testi-image-box {
+    background: linear-gradient(135deg, #1a3a5c, #2d6a8f);
+    border-radius: 20px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    position: relative;
+}
+
+.testi-img-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.testi-emoji {
+    font-size: 120px;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+@media (max-width: 900px) {
+    .testi-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .testi-image-box {
+        height: 300px;
+    }
+}
