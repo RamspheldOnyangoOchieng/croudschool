@@ -1,0 +1,36 @@
+.page-header {
+    background: var(--black);
+    padding: 120px 0 60px;
+    text-align: center;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(191, 32, 38, 0.2) 0%, transparent 100%);
+    z-index: 1;
+}
+
+.ph-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 16px;
+}
+
+.ph-subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
