@@ -74,7 +74,6 @@ export const NAV_LINKS = [
   { name: "Our Approach", href: "/approach" },
   { name: "Our Schools", href: "/schools" },
   { name: "Facilities", href: "/facilities" },
-  { name: "FAQ", href: "/faq" },
   { name: "News", href: "/news" },
   { name: "Fees", href: "/fees" },
   { name: "Enquire", href: "/enquire" },

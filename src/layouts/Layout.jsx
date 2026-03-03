@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import FloatingWidgets from "../components/FloatingWidgets";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Layout = ({ children, title, description }) => {
@@ -37,6 +38,8 @@ const Layout = ({ children, title, description }) => {
                 <main className="main-content">
                     {children}
                 </main>
+
+                <FloatingWidgets />
 
                 <Footer />
 
