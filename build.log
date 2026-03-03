@@ -1,0 +1,31 @@
+
+> crodable-sclools@0.0.0 build
+> vite build
+
+vite v7.3.1 building client environment for production...
+transforming...
+✓ 13 modules transformed.
+✗ Build failed in 3.74s
+error during build:
+[vite:esbuild] Transform failed with 1 error:
+/home/ramspheld/Projects/Ramspheld/DINTYP.SE-2025-master(1)/crodable sclools/src/pages/Facilities.jsx:78:148: ERROR: Expected "}" but found "-"
+file: /home/ramspheld/Projects/Ramspheld/DINTYP.SE-2025-master(1)/crodable sclools/src/pages/Facilities.jsx:78:148
+
+Expected "}" but found "-"
+76 |                              style={{ background: '#1a1a1a', height: '450px', borderRadius: '30px', overflow: 'hidden'...
+77 |                          >
+78 |  ...inear-gradient(135deg, rgba(191,32,38,0.4), transparent)', z- index: 1 }} />
+   |                                                                 ^
+79 |                              <div style={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'cen...
+80 |                          </motion.div>
+
+    at failureErrorWithLog (/home/ramspheld/Projects/Ramspheld/DINTYP.SE-2025-master(1)/crodable sclools/node_modules/esbuild/lib/main.js:1467:15)
+    at /home/ramspheld/Projects/Ramspheld/DINTYP.SE-2025-master(1)/crodable sclools/node_modules/esbuild/lib/main.js:736:50
+    at responseCallbacks.<computed> (/home/ramspheld/Projects/Ramspheld/DINTYP.SE-2025-master(1)/crodable sclools/node_modules/esbuild/lib/main.js:603:9)
+    at handleIncomingPacket (/home/ramspheld/Projects/Ramspheld/DINTYP.SE-2025-master(1)/crodable sclools/node_modules/esbuild/lib/main.js:658:12)
+    at Socket.readFromStdout (/home/ramspheld/Projects/Ramspheld/DINTYP.SE-2025-master(1)/crodable sclools/node_modules/esbuild/lib/main.js:581:7)
+    at Socket.emit (node:events:524:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:191:23)

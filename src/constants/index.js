@@ -39,6 +39,8 @@ export const TESTIMONIALS = [
   { id: 1, quote: "Every child is a masterpiece. I have witnessed growth in character, sports, and exposure at Wagon. It's like the learning is customised to each of my children.", name: "Roy Gitahi", role: "Parent / Former PTA Chairman" },
   { id: 2, quote: "Our aim is to equip students with the academic, social, and emotional tools they need to succeed in secondary school and beyond — with confidence and purpose.", name: "Sonia Jansen", role: "Principal — Middle School" },
   { id: 3, quote: "What truly sets Wagon apart is its commitment to preparing students for a global future through balanced curriculum and emphasis on character-building.", name: "Mamta Nathwani", role: "Wagon School Parent" },
+  { id: 4, quote: "The transition from our previous school was seamless. The teachers at Wagon truly care about individual student progress and emotional wellbeing.", name: "David Mutua", role: "Year 8 Parent" },
+  { id: 5, quote: "I love the outdoor learning spaces and the focus on robotics. It makes coming to school exciting every single day.", name: "Zainab Ahmed", role: "Year 10 Student" },
 ];
 
 export const LEADERS = [
@@ -60,9 +62,11 @@ export const FACILITIES = [
 ];
 
 export const NEWS = [
-  { id: 1, emoji: "🎬", color: "linear-gradient(135deg,#2c5f8a,#4a9dc7)", date: "October 28, 2025", title: "Wagon School Movie Night", excerpt: "An evening of community, connection, and cinema for the whole school family. Have you RSVPd?" },
-  { id: 2, emoji: "🏫", color: "linear-gradient(135deg,#5c3a1e,#9d6b3a)", date: "October 2, 2025", title: "Annual Universities Fair", excerpt: "Over 125 global universities attend our Universities Fair, opening doors for graduating students." },
-  { id: 3, emoji: "🏆", color: "linear-gradient(135deg,#2d6a4f,#52b788)", date: "September 14, 2025", title: "Sports Day Champions", excerpt: "Students celebrate athletic achievement in our annual inter-house sports competition with record participation." },
+  { id: 1, emoji: "🎬", color: "linear-gradient(135deg,#2c5f8a,#4a9dc7)", date: "October 28, 2025", title: "Wagon School Movie Night", excerpt: "An evening of community, connection, and cinema for the whole school family. Over 400 parents and students gathered under the stars." },
+  { id: 2, emoji: "🏫", color: "linear-gradient(135deg,#5c3a1e,#9d6b3a)", date: "October 2, 2025", title: "Annual Universities Fair", excerpt: "Over 125 global universities from US, UK, and Canada attended our annual fair, opening doors for graduating students." },
+  { id: 3, emoji: "🏆", color: "linear-gradient(135deg,#2d6a4f,#52b788)", date: "September 14, 2025", title: "Sports Day Champions", excerpt: "Students celebrate athletic achievement in our annual inter-house sports competition with record participation and school spirit." },
+  { id: 4, emoji: "🔬", color: "linear-gradient(135deg,#8f1c1c,#c44b4b)", date: "August 20, 2025", title: "Innovation Week 2025", excerpt: "A showcase of student-led robotics projects and sustainable energy solutions that left our guest judges from Tatu City impressed." },
+  { id: 5, emoji: "🎭", color: "linear-gradient(135deg,#4a2d6a,#8a52b7)", date: "July 5, 2025", title: "Drama Production: The Future", excerpt: "Our Middle School drama department performed an original play exploring the impact of AI on society to a sold-out audience." },
 ];
 
 export const NAV_LINKS = [
